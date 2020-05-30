@@ -1,10 +1,11 @@
 import {CompassComponent} from '../CompassComponent';
+import {store} from '../../store/store';
+
 
 export class Diagram extends CompassComponent {
 
   template() {
-    // return `<div class="diagram">Diagram</div>`;
-    return 'var gameDiagram = function CreateDiagramCanvas() {
+    var gameDiagram = function CreateDiagramCanvas() {
 		var  canvas = document.createElement("canvas");
 		canvas.setAttribute("id", "diagram");
 		canvas.setAttribute("width", "600");
@@ -34,10 +35,13 @@ export class Diagram extends CompassComponent {
 		ctx.rect(x-halfWidth/2, y-halfWidth/2, halfWidth, halfWidth);
 
 		ctx.stroke();
-		};';
+		};
+    return `<div class="diagram">Diagram</div>`;
   }
 
   result() {
+    const state = store.getState();
+    console.log('Diagram: ', state);
     return this.template();
   }
 }

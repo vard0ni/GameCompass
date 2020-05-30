@@ -1,4 +1,5 @@
 import {CompassComponent} from '../CompassComponent';
+import {store} from '../../store/store';
 
 export class Games extends CompassComponent {
 
@@ -7,6 +8,8 @@ export class Games extends CompassComponent {
   }
 
   result() {
+    const state = store.getState();
+    console.log('Games: ', state);
     return this.template();
   }
 }

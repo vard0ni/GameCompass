@@ -14,5 +14,3 @@ addEventListener('hashchange', () => {
     compass.generateResult();
   }
 });
-
-

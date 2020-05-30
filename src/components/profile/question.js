@@ -26,7 +26,8 @@ export const QUESTIONS = [
         id: 5,
         label: 'Стратегии(Strategy)',
         value: 'Strategy'
-      },{
+      },
+      {
         id: 6,
         label: 'Гонки(Race)',
         value: 'Race'
@@ -169,5 +170,4 @@ export const QUESTIONS = [
 
     ]
   },
-
 ];
