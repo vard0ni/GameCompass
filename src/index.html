@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>GameCompass</h1>
-    <h2>Узнай в какие игры ещё сыграть.</h2>
+    <h2>Узнай в какие игры ещё сыграть!</h2>
 
     <hr>
     <div class="question">
@@ -46,6 +46,22 @@
     </div>
 
     <hr>
+    <div class="question">
+      <p>Какой у вас игровой стаж?</p>
+      <div><label for="q13">Не играю</label><input type="radio" id="q13" name="q13" value="nogamer"></div>
+      <div><label for="q14">1-5 лет</label><input type="radio" id="q14" name="q13" value="gamer"></div>
+      <div><label for="q15">10-15 лет</label><input type="radio" id="q15" name="q13" value="oldgamer"></div>
+      <div><label for="q16">Я посвятил свою жизнь играм!</label><input type="radio" id="q16" name="q13" value="progamer"></div>
+      </div>
+    </div>
+
+    <hr>
+    <div class="question">
+      <p>Как часто вы играете?</p>
+      <div><label for="q17">Часто</label><input type="radio" id="q17" name="q17" value="AAA"><div>
+      <div><label for="q18">Редко</label><input type="radio" id="q18" name="q17" value="Indie"><div>
+      </div>
+    </div>
     <!-- <div class="btnResutlt" type="button" onclick="generateDiagram()">Узнать результат!</div> -->
     <button class="btnResutlt" onclick="generateDiagram()">Узнать результат!</button>
     <div class="resultDiagram"></div>
