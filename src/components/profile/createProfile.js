@@ -8,18 +8,23 @@ function generateInputs(inputs) {
 
 function input({id, label, value}) {
   return `
-    <div class="question__input">
-        <label for="${id}">${label}</label>
-        <input type="radio" value="${value}" id="${id}" name="${id}">
-    </div>
+        <div class="answer">
+            <div class="pretty p-icon p-round p-pulse">
+                <input type="checkbox" value="${value}" id="${id}" name="${id}"/>
+                <div class="state p-success">
+                    <i class="icon mdi mdi-check"></i>
+                    <label>${label}</label>
+                </div>
+            </div>
+        </div>
   `
 }
 
 function generateQuestion({title, inputs}) {
   return `
     <div class="question">
-        <p>${title}</p>
-        <div class="inputs">${generateInputs(inputs)}</div>
+        <div class="title">${title}</div>
+        <div class="answers">${generateInputs(inputs)}</div>
     </div>
   `
 }

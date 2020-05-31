@@ -27,7 +27,7 @@ export class CompassApp {
   appendResult(template) {
     const profileNode = node(this.profile.class);
     if (profileNode) {
-      this.root.removeChild(profileNode);
+      //this.root.removeChild(profileNode);
     }
     this.insert(template);
   }

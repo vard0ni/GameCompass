@@ -1,1 +1,71 @@
+@import "diagram";
+@import "games";
+@import "profile";
+@import "~bulma/bulma";
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poiret+One&family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Thin', sans-serif;
+  font-size: 12px;
+  background: #000000;
+}
+
+.compass {
+  position: relative;
+  color: #888;
+  height: 100%;
+  max-width: 100%;
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.box {
+  width: 700px;
+  margin: auto;
+  font-family: 'Press Start 2P', cursive;
+  background: $black-ter;
+}
+
+
+form {
+  font-family: 'Press Start 2P', cursive;
+}
+
+button {
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 500px;
+}
+
+.title {
+  font-size: 20px;
+  line-height: 1.5
+}
+
+.question {
+  margin-top: 25px;
+}
+
+.answer {
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.gif {
+  margin-bottom: 200px;
+  width: 250px;
+}
 

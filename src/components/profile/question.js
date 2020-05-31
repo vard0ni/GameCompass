@@ -1,130 +1,220 @@
 export const QUESTIONS = [
   {
     title: 'Какие жанры вы предпочитаете?',
+    key: 'genres',
     inputs: [
       {
         id: 1,
-        label: 'Квесты(Quest)',
-        value: 'Quest'
+        label: 'Quest',
+        value: 'quest'
       },
       {
         id: 2,
-        label: 'Шутеры(Shooter)',
-        value: 'Shooter'
+        label: 'Shooter',
+        value: 'shooter'
       },
       {
         id: 3,
-        label: 'Аркады(Arcade)',
-        value: 'Arcade'
+        label: 'Arcade',
+        value: 'arcade'
       },
       {
         id: 4,
-        label: 'Cимуляторы(Simulator)',
-        value: 'Simulator'
+        label: 'Simulation',
+        value: 'simulation'
       },
       {
         id: 5,
-        label: 'Стратегии(Strategy)',
-        value: 'Strategy'
+        label: 'Strategy',
+        value: 'strategy'
       },
       {
         id: 6,
-        label: 'Гонки(Race)',
-        value: 'Race'
+        label: 'Racing',
+        value: 'racing'
+      },
+      {
+        id: 90,
+        label: 'Indie',
+        value: 'indie'
+      },
+      {
+        id: 91,
+        label: 'Adventure',
+        value: 'adventure'
+      },
+      {
+        id: 93,
+        label: 'Casual',
+        value: 'casual'
+      },
+      {
+        id: 94,
+        label: 'Puzzle',
+        value: 'puzzle'
+      },
+      {
+        id: 95,
+        label: 'Sports',
+        value: 'sports'
+      },
+      {
+        id: 96,
+        label: 'Massively Multiplayer',
+        value: 'massively-multiplayer'
+      },
+      {
+        id: 97,
+        label: 'Fighting',
+        value: 'fighting'
+      },
+      {
+        id: 98,
+        label: 'Board Games',
+        value: 'board-games'
+      },
+      {
+        id: 99,
+        label: 'Educational',
+        value: 'educational'
+      },
+      {
+        id: 100,
+        label: 'Family',
+        value: 'family'
       }
     ]
   },
   {
     title: 'Какие разработчики вам нравятся?',
+    key: 'developers',
     inputs: [
       {
         id: 7,
-        label: 'Rockstar',
-        value: 'Rockstar'
+        label: 'Feral Interactive',
+        value: 'feral-interactive'
       },
       {
         id: 8,
-        label: 'Epic Games',
-        value: 'Epic Games'
+        label: 'Square Enix',
+        value: 'square-enix'
       },
       {
         id: 9,
-        label: 'Valve',
-        value: 'Valve'
+        label: 'Valve Software',
+        value: 'valve-software'
       },
       {
         id: 10,
-        label: 'Blizzard',
-        value: 'Blizzard'
+        label: 'Electronic Arts',
+        value: 'electronic-arts'
       },
       {
         id: 11,
         label: 'Ubisoft',
-        value: 'Ubisoft'
+        value: 'ubisoft'
       },
       {
         id: 12,
-        label: ' Electronic Arts',
-        value: ' Electronic Arts'
-      },
-    ]
-  },
-  {
-    title: 'Любите ли вы играть в компаниях?',
-    inputs: [
-      {
-        id: 13,
-        label: 'Да',
-        value: 'multiplayer'
+        label: 'Sony Interactive Entertainment',
+        value: 'sony-interactive-entertainment'
       },
       {
-        id: 14,
-        label: 'Нет',
-        value: 'single-player'
-      }
+        id: 700,
+        label: 'Warner Bros. Interactive',
+        value: 'warner-bros-interactive'
+      },
+      {
+        id: 701,
+        label: 'Bethesda Softworks',
+        value: 'bethesda-softworks'
+      },
+      {
+        id: 702,
+        label: 'Aspyr Media',
+        value: 'aspyr-media'
+      },
     ]
   },
   {
     title: 'На каких устройствах вы играете?',
+    key: 'platforms',
     inputs: [
       {
         id: 15,
-        label: 'ПК',
-        value: 'PC'
+        label: 'PlayStation 4',
+        value: 'playstation4'
       },
       {
         id: 16,
-        label: 'Консоль',
-        value: 'console'
+        label: 'Xbox One',
+        value: 'xbox-one'
       },
       {
         id: 17,
-        label: 'Мобильный телефон',
-        value: 'mobile phone'
+        label: 'Xbox Series X',
+        value: 'xbox-series-x'
+      },
+      {
+        id: 213,
+        label: 'Nintendo Switch',
+        value: 'nintendo-switch'
+      },
+      {
+        id: 2123,
+        label: 'IOS',
+        value: 'ios'
+      },
+      {
+        id: 1230,
+        label: 'Android',
+        value: 'android'
+      },
+      {
+        id: 591,
+        label: 'macOS',
+        value: 'macos'
+      },
+      {
+        id: 3230,
+        label: 'Linux',
+        value: 'linux'
+      },
+      {
+        id: 32330,
+        label: 'Xbox 360',
+        value: 'xbox360'
+      },
+      {
+        id: 902,
+        label: 'PC',
+        value: 'pc'
       }
     ]
   },
   {
-    title: 'Какие игры предпочитаете по дате релиза?',
+    title: 'Какие игры вы предпочитаете по дате релиза?',
+    key: 'release',
     inputs: [
       {
         id: 18,
-        label: 'Свежые(cs go, dota 2, valorant)',
-        value: 'New'
+        label: 'Свежие(CS:GO, Dota 2, Valorant)',
+        value: 'new'
       },
       {
         id: 19,
-        label: 'Проверенные(diablo, fallout, stalker, warcraft)',
-        value: 'Proven'
+        label: 'Проверенные(Diablo, Fallout, Stalker, Warcraft)',
+        value: 'old'
       }
     ]
   },
   {
     title: 'Какой у вас приблизительный игровой стаж?',
+    key: 'experience',
     inputs: [
       {
         id: 20,
-        label: '< 1 года',
+        label: 'меньше 1 года',
         value: 'intern'
       },
       {
@@ -139,23 +229,19 @@ export const QUESTIONS = [
       },
       {
         id: 23,
-        label: '10-15 лет',
+        label: 'больше 10 лет',
         value: 'senior'
-      },
-      {
-        id: 24,
-        label: '> 15 лет',
-        value: 'tech-lead'
       }
     ]
   },
   {
     title: 'Как часто вы играете?',
+    key: 'frequency',
     inputs: [
       {
         id: 25,
         label: 'Каждый день',
-        value: 'every day'
+        value: 'daily'
       },
       {
         id: 26,
@@ -164,10 +250,50 @@ export const QUESTIONS = [
       },
       {
         id: 27,
-        label: 'Раз в неделю',
+        label: 'Раз в месяц',
         value: 'rarely'
       },
-
     ]
   },
+  {
+    title: 'Тэги?',
+    key: 'tags',
+    inputs: [
+      {
+        id: 28,
+        label: 'Singleplayer',
+        value: 'singleplayer'
+      },
+      {
+        id: 29,
+        label: 'Multiplayer',
+        value: 'multiplayer'
+      },
+      {
+        id: 30,
+        label: 'Atmospheric',
+        value: 'atmospheric'
+      },
+      {
+        id: 1000,
+        label: 'Full controller support',
+        value: 'full-controller-support'
+      },
+      {
+        id: 31,
+        label: 'Great Soundtrack',
+        value: 'great-soundtrack'
+      },
+      {
+        id: 32,
+        label: 'RPG',
+        value: 'rpg'
+      },
+      {
+        id: 33,
+        label: 'Steam Achievements',
+        value: 'steam-achievements'
+      }
+    ]
+  }
 ];
