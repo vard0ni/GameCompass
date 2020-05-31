@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>GameCompass</title>
+</head>
+<body>
+<h1>GameCompass</h1>
+<h2>Узнай в какие игры ещё сыграть!</h2>
+
+<hr>
+<div class="question">
+    <p>Какие жанры в предпочитаете?</p>
+    <div><label for="q1">Квесты(Quest)</label><input type="checkbox" id="q1" name="q1" value="Quest"></div>
+    <div><label for="q2">Шутеры(Shooter)</label><input type="checkbox" id="q2" name="q2" value="Shooter"></div>
+    <div><label for="q3">Аркады(Arcade)</label><input type="checkbox" id="q3" name="q3" value="Arcade"></div>
+    <div><label for="q4">Cимуляторы(Simulator)</label><input type="checkbox" id="q4" name="q4" value="Simulator"></div>
+    <div><label for="q5">Стратегии(Strategy)</label><input type="checkbox" id="q5" name="q5" value="Strategy"></div>
+    <div><label for="q6">Гонки(Race)</label><input type="checkbox" id="q6" name="q6" value="Race"></div>
+</div>
+
+<hr>
+<div class="question">
+    <p>Разработчики</p>
+    <div><label for="q7">AAA</label><input type="radio" id="q7" name="q7" value="AAA"><div>
+        <div><label for="q8">Indie</label><input type="radio" id="q8" name="q7" value="Indie"><div>
+        </div>
+
+            <hr>
+            <div class="question">
+                <p>Любите играть в компаниях?</p>
+                <!-- На чём пердпочитаете играть?(Тэги)(контроллеры?) -->
+                <!-- <div><label for="q9">Нее(singleplayer)</label><input type="checkbox" id="q9" name="q9" value="singleplayer"></div>
+                <div><label for="q10">Да(multiplayer)</label><input type="checkbox" id="q10" name="q10" value="multiplayer"></div> -->
+                <div><label for="q9">Нее(singleplayer)</label><input type="radio" id="q9" name="q9" value="singleplayer"><div>
+                    <div><label for="q10">Да(multiplayer)</label><input type="radio" id="q10" name="q9" value="multiplayer"><div>
+                    </div>
+
+                        <hr>
+                        <div class="question">
+                            <p>Какие игры вы предпочитаете?(Дата релиза)</p>
+                            <div><label for="q11">Поновее</label><input type="radio" id="q11" name="q11" value="AAA"><div>
+                                <div><label for="q12">Проверенное</label><input type="radio" id="q12" name="q11" value="Indie"><div>
+                                </div>
+                                </div>
+
+                                <hr>
+                                <div class="question">
+                                    <p>Какой у вас игровой стаж?</p>
+                                    <div><label for="q13">Не играю</label><input type="radio" id="q13" name="q13" value="nogamer"></div>
+                                    <div><label for="q14">1-5 лет</label><input type="radio" id="q14" name="q13" value="gamer"></div>
+                                    <div><label for="q15">10-15 лет</label><input type="radio" id="q15" name="q13" value="oldgamer"></div>
+                                    <div><label for="q16">Я посвятил свою жизнь играм!</label><input type="radio" id="q16" name="q13" value="progamer"></div>
+                                </div>
+                            </div>
+
+                                <hr>
+                                <div class="question">
+                                    <p>Как часто вы играете?</p>
+                                    <div><label for="q17">Часто</label><input type="radio" id="q17" name="q17" value="AAA"><div>
+                                        <div><label for="q18">Редко</label><input type="radio" id="q18" name="q17" value="Indie"><div>
+                                        </div>
+                                        </div>
+                                        <!-- <div class="btnResutlt" type="button" onclick="generateDiagram()">Узнать результат!</div> -->
+                                        <button class="btnResutlt" onclick="generateDiagram()">Узнать результат!</button>
+                                        <div class="resultDiagram"></div>
+                                    </div>
+</body>
+</html>
